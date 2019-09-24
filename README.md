@@ -1,4 +1,6 @@
 # hosted-vue-app
+A sample web-app made with vue-js
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad906b8e-35bf-4a78-a523-78953ac08845/deploy-status)](https://app.netlify.com/sites/vuejs-sample/deploys)
 
 ## Project setup
 ```
