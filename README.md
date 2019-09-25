@@ -1,5 +1,6 @@
 # hosted-vue-app
 A sample web-app made with vue-js
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ad906b8e-35bf-4a78-a523-78953ac08845/deploy-status)](https://app.netlify.com/sites/vuejs-sample/deploys)
 
 ## Project setup
@@ -7,22 +8,22 @@ A sample web-app made with vue-js
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Run your tests
+Run your tests
 ```
 npm run test
 ```
 
-### Lints and fixes files
+Lints and fixes files
 ```
 npm run lint
 ```
