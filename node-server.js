@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
 
 const port = process.env.PORT || 80;
-const hostname = process.env.HOST || 'localhost';
+const hostname = process.env.HOST || '127.0.0.1';
 
 http.createServer(function (request, response) {
     console.log('request ', request.url);
