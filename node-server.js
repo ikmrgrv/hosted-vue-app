@@ -3,13 +3,14 @@ var fs = require('fs');
 var path = require('path');
 
 const port = process.env.PORT || 80;
+const hostname = process.env.HOST || 'localhost';
 
 http.createServer(function (request, response) {
     console.log('request ', request.url);
 
-    var filePath = './dist' + request.url;
-    if (filePath == './dist') {
-        filePath = './dist/index.html';
+    var filePath = path.join(__dirname, 'dist', request.url);
+    if (request.url == '/') {
+        filePath = path.join(filePath, 'index.html');
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
@@ -52,5 +53,6 @@ http.createServer(function (request, response) {
         }
     });
 
-}).listen(port);
-console.log('Server running at http://127.0.0.1:'+port+'/');
+}).listen(port, hostname, () => {
+    console.log('Server running at '+hostname+':'+port+'/');
+});
